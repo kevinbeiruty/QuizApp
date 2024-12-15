@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #A5D6A7;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizgame.HelloController">
+
+  <children>
+    <Text fontSmoothingType="LCD" layoutX="110.0" layoutY="132.0" stroke="BLACK" text="Test Your Knowledge" textAlignment="CENTER" wrappingWidth="279.13671875">
+      <font>
+        <Font name="Arial Bold" size="45.0" />
+      </font>
+    </Text>
+
+    <Button fx:id="userLogIn" onAction="#goToLogInPage" layoutX="155.0" layoutY="300.0" mnemonicParsing="false"  prefHeight="38.0" prefWidth="64.0" style="-fx-background-color: #4682B4;" text="Log In" textFill="WHITE" />
+
+    <Text layoutX="124.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Do you not have an account?" textAlignment="CENTER" wrappingWidth="154.46484375" />
+
+    <Button fx:id="userAccountCreation" onAction="#goToSignInPage" layoutX="278.0" layoutY="369.0" mnemonicParsing="false"  prefHeight="26.0" prefWidth="97.0" style="-fx-background-color: #A5D6A7;" text="Create account" textFill="#3f00d3" underline="true" />
+
+    <Button fx:id="GuestButton" onAction="#goToStartQuizPage" layoutX="279.0" layoutY="300.0" mnemonicParsing="false"  prefHeight="38.0" prefWidth="70.0" style="-fx-background-color: #4682B4;" text="Guest" textFill="WHITE" />
+  </children>
+</AnchorPane>

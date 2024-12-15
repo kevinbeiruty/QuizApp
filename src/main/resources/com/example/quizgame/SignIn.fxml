@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #A5D6A7;" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizgame.SignInController">
+
+    <children>
+        <Label layoutX="179.0" layoutY="61.0" prefHeight="42.0" prefWidth="126.0" text="Sign Up" underline="true">
+            <font>
+                <Font name="Arial Black" size="28.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="119.0" layoutY="189.0" text="Username:" underline="true">
+            <font>
+                <Font name="System Bold Italic" size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="usernameField" layoutX="195.0" layoutY="187.0" promptText="Username" />
+
+        <Label layoutX="121.0" layoutY="253.0" text="Password:" underline="true">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <PasswordField fx:id="passwordField" layoutX="195.0" layoutY="251.0" promptText="Password" />
+
+        <Label layoutX="61.0" layoutY="313.0" text="Confirm Password:" underline="true">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <PasswordField fx:id="confirmPasswordField" layoutX="195.0" layoutY="311.0" promptText="Confirm Password" />
+
+        <Button fx:id="signUpButton" onAction="#goToStartQuizPage" defaultButton="true" layoutX="203.0" layoutY="378.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="86.0" style="-fx-background-color: #4682B4;" text="Sign Up" textFill="WHITE" />
+
+        <Label layoutX="100.0" layoutY="438.0" text="You already have an account?">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+
+        <Button fx:id="logInButton" onAction="#goToLogInPage" layoutX="284.0" layoutY="432.0" mnemonicParsing="false"  prefHeight="30.0" prefWidth="62.0" style="-fx-background-color: #A5D6A7;" text="Log In" textFill="#0003a6" underline="true">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+        <Button fx:id="backButton" onAction="#goToHomePage" layoutX="33.0" layoutY="530.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="57.0" style="-fx-background-color: #4682B4;" text="Back" textFill="WHITE" >
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #A5D6A7;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizgame.ProgressController">
+    <children>
+        <Button fx:id="backButton" onAction="#goToStartQuiz" layoutX="33.0" layoutY="530.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="57.0" style="-fx-background-color: #4682B4;" text="Back" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Text fontSmoothingType="LCD" layoutX="157.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Progress" textAlignment="CENTER">
+            <font>
+                <Font name="Arial Bold" size="30.0" />
+            </font>
+        </Text>
+        <Label layoutX="50.0" layoutY="140.0" text="Topic: General Knowledge" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+        <ProgressBar fx:id="progressGeneralKnowledge" layoutX="50.0" layoutY="170.0" prefHeight="20.0" prefWidth="400.0" />
+
+        <Label layoutX="50.0" layoutY="220.0" text="Topic: Sports" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+        <ProgressBar fx:id="progressSports" layoutX="50.0" layoutY="250.0" prefHeight="20.0" prefWidth="400.0" />
+
+        <Label layoutX="50.0" layoutY="300.0" text="Topic: History" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+        <ProgressBar fx:id="progressHistory" layoutX="50.0" layoutY="330.0" prefHeight="20.0" prefWidth="400.0" />
+
+        <Label layoutX="50.0" layoutY="380.0" text="Topic: Science" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+        <ProgressBar fx:id="progressScience" layoutX="50.0" layoutY="410.0" prefHeight="20.0" prefWidth="400.0" />
+    </children>
+</AnchorPane>

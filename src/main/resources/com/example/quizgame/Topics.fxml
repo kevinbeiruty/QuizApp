@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: #A5D6A7;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.example.quizgame.TopicsController">
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="500.0">
+            <children>
+                <Label layoutX="120.0" layoutY="54.0" style="-fx-text-fill: #37474F;" text="Select Your Topic" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="30.0" />
+                    </font>
+                </Label>
+
+                <Separator layoutX="50.0" layoutY="100.0" prefWidth="400.0" />
+
+                <GridPane hgap="20.0" layoutX="108.0" layoutY="207.0" vgap="20.0">
+                    <children>
+                        <RadioButton fx:id="GeneralKnowledge_" prefHeight="44.0" prefWidth="150.0" style="-fx-font-size: 14px;" text="General Knowledge" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                        <RadioButton fx:id="History_" prefHeight="43.0" prefWidth="70.0" style="-fx-font-size: 14px;" text="History" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                        <RadioButton fx:id="Sports_" prefHeight="43.0" prefWidth="150.0" style="-fx-font-size: 14px;" text="Sports" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                        <RadioButton fx:id="Science_" prefHeight="42.0" prefWidth="72.0" style="-fx-font-size: 14px;" text="Science" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                    </children>
+                    <columnConstraints>
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                    </rowConstraints>
+                </GridPane>
+
+                <Button fx:id="Confirmation_" layoutX="185.0" layoutY="377.0" mnemonicParsing="false" onAction="#ConfirmSelection" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #4682B4; -fx-text-fill: #FFFFFF; -fx-font-size: 14px;" text="Confirm">
+                </Button>
+                <Button fx:id="backButton" onAction="#goToStartQuiz" layoutX="33.0" layoutY="530.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="57.0" style="-fx-background-color: #4682B4;" text="Back" textFill="WHITE" >
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>
